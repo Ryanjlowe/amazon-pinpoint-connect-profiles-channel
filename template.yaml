@@ -85,10 +85,10 @@ Resources:
               for endpointId,endpoint in event['Endpoints'].items():
 
                 request = {
-                  offerName: offer_name,
-                  offerViewed: offer_viewed,
-                  endpoint: endpoint,
-                  UserId: endpoint['User']['UserId']
+                  "offerName": offer_name,
+                  "offerViewed": offer_viewed,
+                  "endpoint": endpoint,
+                  "UserId": endpoint['User']['UserId']
                 }
 
                 if endpoint['ChannelType'] == 'EMAIL':
@@ -152,10 +152,10 @@ Resources:
               for endpointId,endpoint in event['Endpoints'].items():
 
                 request = {
-                  offerName: offer_name,
-                  offerViewed: offer_viewed,
-                  endpoint: endpoint,
-                  UserId: endpoint['User']['UserId']
+                  "offerName": offer_name,
+                  "offerViewed": offer_viewed,
+                  "endpoint": endpoint,
+                  "UserId": endpoint['User']['UserId']
                 }
 
                 if endpoint['ChannelType'] == 'EMAIL':
